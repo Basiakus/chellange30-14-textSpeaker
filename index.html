@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<title>Speech Synthesis</title>
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div id="speakingApp">
+			<h1>Text Speaker</h1>
+			<select name="speakers" id="speaker">
+				<option value="" selected>Select A Speaker</option>
+			</select>
+			<label for="rate">speed:</label>
+			<input name="rate" type="range" min="0" max="2" value="1" step="0.1">
+			<label for="pitch">Pitch:</label>
+			<input name="pitch" type="range" min="0.1" max="2" step="0.1" volume ="1">
+			<textarea name="text">I speak this text only with different accent because I don't have access to the localService of my voice but I recognise the symbols like: :), &#9728;, &#10084;, 1000 &minus; 254 = 746
+			</textarea>
+			<div id="buttons">
+				<button id="stop">Stop</button>
+				<button id="speak">Speak</button>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
